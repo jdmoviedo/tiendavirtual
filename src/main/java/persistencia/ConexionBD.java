@@ -21,9 +21,10 @@ public class ConexionBD {
 
     //Constructor sin parmetros		
     public ConexionBD() {
-        local = true;
+        local = false;
         //DB_driver = "com.mysql.jdbc.Driver";
         DB_driver = "com.mysql.cj.jdbc.Driver";
+        //:@us-cdbr-east-04.cleardb.com/heroku_c91b4e83d959c7e?reconnect=true
         if (local) {
             host = "localhost:3306";
             db = "tiendavirtual";
@@ -31,11 +32,11 @@ public class ConexionBD {
             username = "root";                      			//usuario base de datos global 
             password = "";
         } else {
-            host = "us-mm-auto-dca-04-b.cleardb.net:3306";
-            db = " ";
+            host = "us-cdbr-east-04.cleardb.com";
+            db = "heroku_c91b4e83d959c7e";
             url = "jdbc:mysql://" + host + "/" + db; 		//URL DB
-            username = " ";                      			//usuario base de datos global 
-            password = " ";
+            username = "b6f0157aec9db3";                      			//usuario base de datos global 
+            password = "4227b89d";
         }
         try {
             //Asignacin del Driver
