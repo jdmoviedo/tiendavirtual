@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Error 404</title>
+
+        <!-- Google fonts-->
+        <link href="dist/img/logo.png" rel="icon" type="image/png" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800"
+            rel="stylesheet"
+            />
+        <!-- Bootstrap -->
+        <link
+            href="plugins/bootstrap/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            />
+        <style>
+            body {
+                background: #dedede;
+            }
+            .page-wrap {
+                min-height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%">
+            
+                <lottie-player
+                    src="dist/img/animations/404.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 500px; height: 500px"
+                    loop
+                    autoplay
+                    ></lottie-player>
+                <div class="mb-4 lead">No se encontró la página que buscaba.</div>
+                <a href="index.jsp" class="btn btn-link">Regresar al Inicio</a>
+            
+        </div>
+        <!-- LottiePlayer -->
+        <script src="plugins/lottie/lottie-player.js"></script>
+        <script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

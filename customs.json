@@ -1,0 +1,15 @@
+{
+    "elements": {
+        "lottie-player": {
+            "attributes": {
+                "src": {},
+                "background": {},
+                "loop": {},
+                "style": {},
+                "speed": {},
+                "autoplay": {}
+            }
+        }
+    },
+    "attributes": {}
+}
